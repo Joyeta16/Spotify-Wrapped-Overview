@@ -29,13 +29,32 @@ The spotify_history file includes detailed information such as:
 - shuffle: Shuffle status (True/False).
 - skipped: Skipped status (True/False).
 
-This dataset forms the foundation for analyzing listening habits and uncovering music preferences.
+The analysis covers data from 2013 to 2024, offering valuable insights into listening habits and personal music preferences.
 
-Data Cleaning Process
+## Data Cleaning Steps
 
-Summarize the steps taken to clean and prepare the data:
-Removed duplicates or irrelevant records.
-Transformed timestamps into meaningful time formats (e.g., months, weekdays, hours).
-Created calculated metrics (e.g., play duration, skipped tracks).
-Addressed missing values or inconsistencies.
+### Used Power Query to Clean the Data:  
+
+- Cleaned and transformed the dataset using Power Query to prepare it for analysis.
+
+### Created Columns for Duration:
+
+- Extracted seconds and minutes from the ms_played column to better understand playback duration.
+
+### Extracted Date Information:
+
+- Extracted the date from the ts (timestamp) column and created a separate Date column for easier time-based analysis.
+
+### Filtered Short Tracks:
+
+- Removed rows where playback duration was ≤ 30 seconds. These are typically skipped songs that don't provide meaningful insights and would skew the results.
+
+### Created a Calendar Table:
+
+- Generated a calendar table with the following columns:
+  - Year, Date, Month Name, Month (for sorting months), Week of Month, Weekdays, Weekday Sort (for sorting weekdays).
+
+### Generated Unique Track Identifier (DAX):
+
+- Created a calculated column in DAX to generate a unique_uri_track for tracks with the same title but different identifiers, ensuring accurate tracking of individual songs.
 
