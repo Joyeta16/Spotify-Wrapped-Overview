@@ -53,15 +53,15 @@ The analysis covers data from 2013 to 2024, offering valuable insights into list
 
 #### Created a Calendar Table:
 
-- Built a calendar table with the following fields:
+- Built a calendar table in Power Query with the following fields:
 
-  - Year, Date, Month Name, Month (for sorting), Week of Month, Weekdays, and Weekday Sort (for sorting).
+  - Year, Date, Month Name, Month (for sorting), Week of Month, Weekdays, and Weekday Sort (for sorting), Month_name_short (for specific visual), Week_Name_full (for specific visual).
 
 #### Generated Unique Track Identifiers:
 
 - Created a calculated column in DAX to generate a unique_uri_track column, ensuring accurate identification of tracks with the same title but different identifiers.
 
-#### Added Weekday/Weekend Classification:
+#### Added Daytype Classification:
 
 - Created a calculated column in the calendar table using DAX to classify dates as weekday or weekend for time-based analysis.
 
