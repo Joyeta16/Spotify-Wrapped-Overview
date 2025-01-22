@@ -55,7 +55,7 @@ The analysis covers data from 2013 to 2024, offering valuable insights into list
 
 - Built a calendar table in Power Query with the following fields:
 
-  - Year, Date, Month Name, Month (for sorting), Week of Month, Weekdays, and Weekday Sort (for sorting), Month_name_short (for specific visual), Week_Name_full (for specific visual).
+  - Year, Date, Month Name, Month (for sorting), Weekdays, and Weekday Sort (for sorting), Month_name_short (for specific visual), Week_Name_full (for specific visual).
 
 #### Generated Unique Track Identifiers:
 
