@@ -73,6 +73,9 @@ The analysis covers data from 2013 to 2024, offering valuable insights into list
 
 This repository showcases a Power BI report hosted on the Power BI Service, along with its underlying data model. Below are pdfs of the report and the data model for a quick preview:
 
+- Data Model
+- Spotify Wrapped Dashboard
+
 
 ## 💡 Key Insights
 
@@ -126,7 +129,7 @@ This repository showcases a Power BI report hosted on the Power BI Service, alon
 
 #### Artist and Track Dominance:
 
-- The Beatles consistently ranked as the favorite artist from 2016 onward, with occasional competition in specific years. Similarly, ‘Ode to the Mets’ stood out as the most-played track over the years, reflecting a strong personal connection.  
+- The Beatles consistently ranked as the favorite artist from 2016 onward, with occasional competition in specific years. Similarly, ‘Ode To The Mets’ stood out as the most-played track over the years, reflecting a strong personal connection.  
 
 ## 🛠️ Tools
 
