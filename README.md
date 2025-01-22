@@ -73,7 +73,7 @@ The analysis covers data from 2013 to 2024, offering valuable insights into list
 
 This repository showcases a Power BI report hosted on the Power BI Service, along with its underlying data model. Below are pdfs of the report and the data model for a quick preview:
 
-- [Data Model](https://github.com/Joyeta16/Spotify-Wrapped-Overview/blob/main/Spotify%20Data%20Modelling.pdf)
+- [Data Model](https://github.com/Joyeta16/Spotify-Wrapped-Overview/blob/main/Spotify%20Data%20Model.pdf)
 - [Spotify Wrapped Dashboard](https://github.com/Joyeta16/Spotify-Wrapped-Overview/blob/main/Spotify%20Dashboard.pdf)
 
 
