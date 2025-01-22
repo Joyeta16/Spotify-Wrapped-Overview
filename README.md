@@ -1,19 +1,19 @@
-# Music by the Numbers: Spotify Wrapped Analysis  
+# 🎼 Music by the Numbers: Spotify Wrapped Analysis  
 
 
-## Project Objective:
+## 🎯 Project Objective:
 
 To create a personalized Spotify Wrapped dashboard that provides a comprehensive view of the user's listening habits over the years. The dashboard will showcase trends in listening behavior by year, month, weekday, and time of day, while also highlighting personal music preferences, such as favorite artists, tracks, and albums. The goal is to deliver an engaging, data-driven summary of the user's unique music journey.
 
-## Dataset
+## 🛢 Dataset:
 
 The data for this project is sourced from the Maven Analytics website and can be accessed via the following link:
 [Maven Music Challenge](https://mavenanalytics.io/challenges/maven-music-challenge/e161353d-9967-4297-869c-505de168e610)
 
 It contains two CSV files:
 
-1. spotify_data_dictionary: A reference file describing the dataset's columns.
-2. spotify_history: The primary dataset used in this project.
+1. **spotify_data_dictionary:** A reference file describing the dataset's columns.
+2. **spotify_history:** The primary dataset used in this project.
 
 The spotify_history file includes detailed information such as:
 
@@ -31,17 +31,17 @@ The spotify_history file includes detailed information such as:
 
 The analysis covers data from 2013 to 2024, offering valuable insights into listening habits and personal music preferences.
 
-## Data Cleaning Steps:
+## 🧹️ Data Cleaning Steps:
 
 #### Removed Noisy Tracks:
 
-- Filtered out rows/tracks with a playback duration of ≤30 seconds, as these are typically skipped songs that add noise and skew results.
+- Filtered out tracks with a playback duration of ≤30 seconds, as they indicate minimal interaction and primarily add noise, skewing the results.
 
 #### Ensured Consistency:
 
 - Used Power Query to clean and standardize the data for further processing.
 
-## Data Preparation Steps:
+## 📊 Data Preparation Steps:
 
 #### Extracted Playback Duration:
 
@@ -54,6 +54,7 @@ The analysis covers data from 2013 to 2024, offering valuable insights into list
 #### Created a Calendar Table:
 
 - Built a calendar table with the following fields:
+
   - Year, Date, Month Name, Month (for sorting), Week of Month, Weekdays, and Weekday Sort (for sorting).
 
 #### Generated Unique Track Identifiers:
@@ -64,50 +65,85 @@ The analysis covers data from 2013 to 2024, offering valuable insights into list
 
 - Created a calculated column in the calendar table using DAX to classify dates as weekday or weekend for time-based analysis.
 
-## Report Inclusions
+#### Time Period Categorization:
 
-This repository showcases a Power BI report hosted on the Power BI Service, along with its underlying data model. Below are screenshots of the report and the data model for a quick preview:
+- Created a calculated column in DAX to determine the time of day from the timestamp, enabling the identification of the most active time periods.
 
+## 📑 Report Inclusions
 
-## Key Insights
-
-Overall Listening Trends:
-Engagement Growth and Decline:
-
-Initial engagement with Spotify was low in 2013 and 2014, with significant growth starting in 2015.
-Listening activity peaked in 2020 with 54.77k minutes, likely influenced by lifestyle changes during the pandemic.
-A gradual decline in activity is observed from 2022 onward.
-Device Preferences:
-
-Most listening was done on Android (90.9% of total time). However, Windows was the primary platform in 2013 and 2014.
-Year-Specific Highlights:
-2013–2014 (Early Activity):
-
-2013: July saw the highest activity (226.28 minutes), with Saturday nights being the most active time. Top artist: John Mayer.
-2014: January stood out (61.84 minutes), with Thursday evenings being the peak listening time. Artists were varied with no clear favorite.
-2015–2019 (Growth Years):
-
-2015: A significant increase in activity, peaking in August (1.23k minutes). Saturdays and nighttime listening were most prominent.
-2016–2019: Nighttime listening remained consistent, with favorite days shifting each year.
-The Beatles became the dominant artist from 2016 onward.
-2020–2024 (Peak and Decline):
-
-2020: Marked the highest overall engagement, with April being the top month (7.01k minutes). Fridays and nighttime were the most active. Favorite artists included The Killers and The Beatles.
-2021: Showcased the most diverse exploration of artists, albums, and tracks, with January seeing the highest activity (6.74k minutes).
-2022–2024: A gradual decline in listening is evident. Fridays and nighttime continued to dominate, with The Beatles remaining a top choice.
-Recurring Patterns:
-Time Preferences:
-
-Nighttime consistently emerged as the favorite time for streaming music across all years.
-Day Preferences:
-
-Fridays were the most active day starting from 2018, with some variations in earlier years.
-Artist Dominance:
-
-The Beatles consistently ranked as the favorite artist from 2016 onward, with occasional competition in specific years.
+This repository showcases a Power BI report hosted on the Power BI Service, along with its underlying data model. Below are pdfs of the report and the data model for a quick preview:
 
 
+## 💡 Key Insights
 
-## Skills Gained
+### Overall Listening Trends:
+
+#### Engagement Growth and Decline:
+
+- Initial engagement with Spotify was low in 2013 and 2014, with significant growth starting in 2015.
+
+- Listening activity peaked in 2020 with 54.77K minutes, likely influenced by lifestyle changes during the pandemic.
+
+- A gradual decline in activity is observed from 2022 onward.  
+
+#### Device Preferences:
+
+- Most listening was done on Android (90.9% of total time). However, Windows was the primary platform in 2013 and 2014.
+
+### Year-Specific Highlights:  
+
+#### 2013–2014 (Early Activity):
+
+- **2013:** July saw the highest activity (226.28 minutes), with Saturday nights being the most active time. Top artist: John Mayer.
+
+- **2014:** January stood out (61.84 minutes), with Thursday evenings being the peak listening time. Artists were varied with no clear favorite.
+
+#### 2015–2019 (Growth Years):
+
+- **2015:** A significant increase in activity, peaking in August (1.23K minutes). Saturdays and nighttime listening were most prominent.
+
+- **2016–2019:** Nighttime listening remained consistent, with favorite days shifting each year.
+
+- The Beatles became the dominant artist from 2016 onward.
+
+#### 2020–2024 (Peak and Decline):
+
+- **2020:** Marked the highest overall engagement, with April being the top month (7.01K minutes). Fridays and nighttime were the most active. Favorite artists included The Killers and The Beatles.
+
+- **2021:** Showcased the most diverse exploration of artists(1.48K), albums(2.45K), and unique tracks(4.72K), with January seeing the highest activity (6.74K minutes).
+
+- **2022–2024:** A gradual decline in listening is evident. Fridays and nighttime continued to dominate, with The Beatles remaining a top choice.
+
+### Recurring Patterns:
+
+#### Time Preferences:
+
+- Nighttime consistently emerged as the favorite time for streaming music across all years.
+
+#### Day Preferences:
+
+- Fridays were the most active day starting from 2018, with some variations in earlier years.
+
+#### Artist and Track Dominance:
+
+- The Beatles consistently ranked as the favorite artist from 2016 onward, with occasional competition in specific years. Similarly, ‘Ode to the Mets’ stood out as the most-played track over the years, reflecting a strong personal connection.  
+
+## 🛠️ Tools
+
+- Data Visualization: Power BI
+- Data Cleaning and Transformation: Power Query
+- Data Analysis: DAX
+
+## 🧠 Skills Gained
+
+- Applied data cleaning and transformation techniques using Power Query and DAX.
+
+- Conducted time-based analysis by creating calendar tables and utilizing date functions.
+
+- Designed user-centric Power BI dashboards to visualize personalized insights effectively.
+
+- Gained a deeper understanding of personalized marketing metrics and their impact on user engagement and sentiments.
+
+---
 
 
