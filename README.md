@@ -137,6 +137,10 @@ This repository showcases a Power BI report hosted on the Power BI Service, alon
 - Data Cleaning and Transformation: Power Query
 - Data Analysis: DAX
 
+## 📎 Links
+🌐 [Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7288082253304188928/)  
+📊 [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMzIxOGQzZTctMzU3Zi00N2JlLWFiYzUtODA2YmI5OWE5NjFjIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
 ## 🧠 Skills Gained
 
 - Applied data cleaning and transformation techniques using Power Query and DAX.
